@@ -1,3 +1,30 @@
+libvpx (1.5.0-2ubuntu1.1) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: image width alignment issue
+    - debian/patches/CVE-2017-13194-1.patch: fix image width alignment in
+      vpx/src/vpx_image.c.
+    - debian/patches/CVE-2017-13194-2.patch: fix alignment without external
+      allocation in vpx/src/vpx_image.c.
+    - CVE-2017-13194
+  * SECURITY UPDATE: double free in ParseContentEncodingEntry
+    - debian/patches/CVE-2019-2126.patch: set compression_entries_ to NULL
+      in third_party/libwebm/mkvparser/mkvparser.cc.
+    - CVE-2019-2126
+  * SECURITY UPDATE: out of bounds read
+    - debian/patches/CVE-2019-9232.patch: use unsigned char in
+      vp8/decoder/dboolhuff.h, vpx_dsp/bitreader.h.
+    - CVE-2019-9232
+  * SECURITY UPDATE: out of bounds read
+    - debian/patches/CVE-2019-9325.patch: fix size in vp9/vp9_dx_iface.c,
+      vpx_dsp/bitreader_buffer.c, test/decode_api_test.cc.
+    - CVE-2019-9325
+  * SECURITY UPDATE: memory disclosure issue
+    - debian/patches/CVE-2019-9433.patch: fix use-after-free in
+      vp8/common/postproc.c.
+    - CVE-2019-9433
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 19 Nov 2019 11:26:37 -0500
+
 libvpx (1.5.0-2ubuntu1) xenial; urgency=medium
 
   * Update to PHP7.0 build-dependencies (LP: #1566423).

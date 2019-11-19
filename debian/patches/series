@@ -1,2 +1,9 @@
 fix-armhf-link.patch
 fix-build.patch
+CVE-2017-13194-1.patch
+CVE-2017-13194-2.patch
+CVE-2019-2126.patch
+CVE-2019-9232.patch
+CVE-2019-9325-pre1.patch
+CVE-2019-9325.patch
+CVE-2019-9433.patch
